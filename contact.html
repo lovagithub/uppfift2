@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <title>Inlämningsuppgift 2/contact.html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Min utlämnings uppgift">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Lova Juhlin">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8444161cfc.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    <script defer src="assets/js/script.js"></script>
+   
+
+</head>
+<body>
+
+    <nav class="__navbar container">      
+            <div class="__logo">
+                Fixxo.
+            </div>
+            <div class="__nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Products</a>
+                <a class="__active" href="contact.html">Contacts</a>
+         </div>
+      
+            <div class="__nav-icon-links">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-repeat"></i></a>
+                <a href="#">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">
+                        1</span>
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">
+                        3</span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+         </div>           
+    </nav>
+
+<section class="breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb-list">
+            <li><a href="index.html">Home</a></li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</section>
+
+<section class="map">
+    <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77428.68301938564!2d17.93947375151928!3d59.33843082026477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d9bf5c1b0bf%3A0x1ea1ef0bab429194!2sTomtebodav%C3%A4gen%2038%2C%20171%2065%20Solna!5e0!3m2!1ssv!2sse!4v1666032727393!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-form">
+    <div class="container">
+    <h2>Come in Contact with Us</h2>
+    <form onsubmit="submitForm(event)" novalidate>
+        <div>
+        <input id="name" type="text" onkeyup="validate(event)" placeholder="Your Name">
+        <div id="nameErrorMassage" class="errorMessage"></div>
+        </div>
+        <div>
+        <input id="email" type="email" onkeyup="validate(event)" placeholder="Your Meil">
+        <div id="emailErrorMassage" class="errorMessage"></div>
+        </div>
+        <div class="textarea">
+        <textarea id="comment" onkeyup="validate(event)" placeholder="Comments"></textarea> 
+        <div id="commentErrorMassage" class="errorMessage"></div>
+        </div>
+        <div>
+            <button type="submit" class="__btn-theme">
+                <span class="__btn-theme-left"></span>               
+                <span class="__btn-theme-right"></span>
+                Post Comments</button>
+        </div>
+    </form>
+    </div>
+</section>
+
+<footer>
+    <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>       
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+     <p> © 2022 Fixxo. All Rights Reserved</p>
+   
+</footer>
+</body>
+</html>
